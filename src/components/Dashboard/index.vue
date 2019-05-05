@@ -66,8 +66,7 @@
                 .get('http://localhost:3004/campaigns')
                 .then(
                     response => (
-                        (this.campaigns = response.data),
-                            console.log(this.campaigns)
+                        (this.campaigns = response.data)
                     )
                 )
                 .catch(error => console.log(error));
